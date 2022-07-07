@@ -1,7 +1,19 @@
 body {
     text-align: center;
+    height: 100vh;
+    margin: auto;
   }
   
+.Flex{
+
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+
   p {
     font-size: 1.5rem;
     -moz-text-size-adjust: auto;
@@ -17,16 +29,11 @@ body {
             font-size: auto;
             -moz-text-size-adjust: auto;
         }
-        #medium{
-            visibility: hidden;
-            display: none;
-         }
-         
-        #large{
-            visibility: hidden;
-            display: none;
+       #Small,#medium,#large{
 
-        }
+        width: 100%;
+
+       }
 
 
       }
@@ -35,40 +42,40 @@ body {
         body {
           background-color: #A8E4B1;
         }
-        #Small{
-            visibility: hidden;
-            display: none;
-         }
+       
          #medium{
             font-size: 1.5rem;
             -moz-text-size-adjust: auto;
          }
          
-        #large{
-            visibility: hidden;
-            display: none;
+        #Small{
+
+            width: 66%;
+
         }
-        
+        #medium{
+
+                width: 33%;
+        }
       }
       
     @media (min-width: 1024px)  {
         body {
           background-color: #4AA3BA;
         }
-        #Small{
-            visibility: hidden;
-            display: none;
-         }
-         
-        #medium{
-            visibility: hidden;
-            display: none;
-
-        }
+       
+        
         #large{
 
             
             font-size: 2.5rem;
             -moz-text-size-adjust: auto;
         }
+
+        #Small,#medium,#large{
+
+            width: 33%;
+
+        }
+
       }
